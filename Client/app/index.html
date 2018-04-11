@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello This is CORS Project</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/callServer.js"></script>
+    <script src="js/addProduct.js"></script>
+    <script src="js/updateProduct.js"></script>
+    <script src="js/deleteProduct.js"></script>
+</head>
+    
+    
+    
+                    <!-- Add product -->
+    <h1> Add product </h1>
+    <form>
+        <label> Product name</label> <br>
+        <input Type="text" name="productName" id="label1">
+        <br>
+        
+        <label> Price</label><br>
+        <input Type = "text" name="price" id="label2">
+        <br>
+        
+          <button type="button" onClick="addProduct(label1,label2)">Add</button> 
+            
+        
+    </form>
+
+    
+    
+        
+                    <!-- UPDATE THE PRODUCT -->
+    <h1> Update Product </h1>
+    <form>
+        <label> Product id</label> <br>
+        <input type="text" name="id"  id = "label1">
+        <br>
+        
+        <label> Product name</label> <br>
+        <input type="text" name="productName" id = "label2">
+        <br>
+        
+        <label> Price </label><br>
+        <input type = "text" name="price" id = "label3">
+        <br>
+      <button type="button" onClick="updateProduct(label1,label2,label3)">Update</button> 
+    </form> 
+    
+    
+    
+    
+    
+    
+                    <!-- Delete Products -->
+    
+    <h1> Delete Product</h1>
+    <form >
+        <label> Product id</label> <br>
+        <input type="text" name="productId" id ="label1">
+        <br>
+      <button type="button" onClick="deleteProduct(label1)">Delete</button> 
+    </form>
+    
+    
+    
+    
+    
+            <!-- List the products -->
+    
+    <h2>List of products</h2>
+    <ul id="productsList">
+        
+    </ul>
+
+
+</html>
+
